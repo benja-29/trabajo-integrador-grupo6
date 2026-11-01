@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
   Box, 
   TextField, 
@@ -113,7 +113,7 @@ const FormularioAltaCliente = ({ onClienteCreado }) => {
       const data = await response.json();
       
       setAlertSeverity('success');
-      setAlertMessage(`¡Cliente registrado con éxito! ID asignado por API: ${data.id}`);
+      setAlertMessage("¡Cliente registrado! Se agregó a la lista durante esta sesión.");
       setOpenSnackbar(true);
 
       setTimeout(() => {
